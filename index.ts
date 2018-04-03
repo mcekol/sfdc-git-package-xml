@@ -18,7 +18,7 @@ sh.cd(o.dir);
 logger.log(`Navigate to: ${o.dir}`);
 
 // execute
-let cmd = `git diff --name-only ${o.from} ${o.to} | grep "src/*"`;
+let cmd = `git diff --name-only ${o.from} ${o.to} |grep -v 'src/[a-zA-Z0-9_/\\.-]*.xml$' | grep src`;
 logger.log(`Executing: ${cmd}`);
 let output = sh.exec(cmd);
 
