@@ -3,7 +3,7 @@
 Used for generating package.xml files from existing SalesForce project source (src) folders.
 Use it to generate a package.xml for files changed between commits - helps with incremental deployment.
 
-###Currently supports:
+### Currently supports:
 * ApexClass
 * ApexPage
 * ApexComponent
@@ -33,5 +33,5 @@ Usage: sgpx [options]
         sgpx --from v1.2 --to v1.3 --dir /my/absolute/dir/path/to/repo --sv 41.0
 ```
 
-###TODO:
+### TODO:
 [ ] Add support for other types
