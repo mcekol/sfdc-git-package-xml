@@ -42,7 +42,7 @@ export class CmdOptions {
 
 		.demandOption(['from', 'to', 'dir', 'salesforce-version'])
 
-		.example('$0 --from v1.2 --to v1.3 --dir /my/absolute/dir/path/to/repo ', '')
+		.example('$0 --from v1.2 --to v1.3 --dir /my/absolute/dir/path/to/repo --sv 41.0', '')
 			.argv;
 	}
 
